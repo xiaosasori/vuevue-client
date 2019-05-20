@@ -4,6 +4,7 @@
 		<v-layout row wrap>
 			<v-flex xs12 sm6 offset-sm3>
 				<h1>Welcome Back!</h1>
+				<p>User Demo: light | 123</p>
 			</v-flex>
 		</v-layout>
 		<!-- Error Alert -->
