@@ -26,7 +26,7 @@ Vue.use(Vuetify, {
 Vue.use(VueApollo)
 // Setup ApolloClient
 export const defaultClient = new ApolloClient({
-  uri: process.env.URI,
+  uri: 'http://vuevue-server.herokuapp.com/',
   // Include auth token with requests made to backend
   fetchOptions: {
     credentials: 'include'
