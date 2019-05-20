@@ -26,7 +26,7 @@ Vue.use(Vuetify, {
 Vue.use(VueApollo)
 // Setup ApolloClient
 export const defaultClient = new ApolloClient({
-  uri: process.env.URI || 'http://localhost:4000/graphql',
+  uri: process.env.URI,
   // Include auth token with requests made to backend
   fetchOptions: {
     credentials: 'include'
