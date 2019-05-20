@@ -214,9 +214,10 @@ export default new Vuex.Store({
         .then(({ data }) => {
           commit('setLoading', false);
           localStorage.setItem('token', data.signinUser.token);
-          router.go();
+          router.push('/');
         })
         .catch(err => commit('setError', err));
+        commit('setLoading', false);
     },
     signupUser: ({ commit }, payload) => {
       commit('clearError');
